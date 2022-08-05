@@ -11,3 +11,9 @@
 [dev]
   command = "npm run start"
   targetPort = 8888
+
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
